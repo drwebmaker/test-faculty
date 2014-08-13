@@ -1,0 +1,14 @@
+.current-user {
+
+  &__avatar {
+    $current-user-avatar-size: 3 * $global-baseline;
+
+    display: inline-block;
+    vertical-align: top;
+    width: $current-user-avatar-size;
+    height: $current-user-avatar-size;
+    margin: ($global-header-height - 2px - $current-user-avatar-size)/2 0;
+
+    border-radius: 50%;
+  }
+}

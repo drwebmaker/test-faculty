@@ -1,0 +1,32 @@
+$page-header-height: $global-header-height;
+
+.page-header {
+  font-size: 14px;
+  color: white;
+  @include background( linear-gradient(left, #42b89a, #3a95c7 ) );
+
+  &__logo {
+    height: $page-header-height - 2px;
+    line-height: $page-header-height - 2px;
+  }
+  &__img {
+    vertical-align: middle;
+  }
+  &__avatar {
+    padding: 0 $global-baseline;
+  }
+
+}
+
+.ph-menu {
+  font-weight: bold;
+  &__item {
+    $nav-header-height: $global-header-height - 2px;
+
+    display: block;
+    height: $nav-header-height;
+    padding: 0 $global-baseline*2;
+    line-height: $nav-header-height;
+    text-decoration: none;
+  }
+}

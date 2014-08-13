@@ -1,0 +1,40 @@
+.page-sidebar {
+  padding-top: $global-baseline * 3 - 3px;
+  padding-left: $global-baseline * 3 - 1px;
+  padding-right: $global-baseline * 2;
+}
+.ps-menu {
+  margin-bottom: $global-baseline * 2;
+
+  &__title {
+    display: block;
+    padding: $global-baseline 0 ($global-baseline * 3 - 6px) 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $global-font-size-small - 2px;
+  }
+
+  &__item {
+    display: block;
+    color: $color-tx;
+    font-weight: bold;
+    line-height: $global-baseline * 3 - 3px;
+
+    &:hover,
+    &--active{
+      color: $color-dc-primary;
+    }
+    &--active {
+      background: url("/img/arrow.png") 100% 50% no-repeat;
+    }
+  }
+}
+
+.ps-banner {
+  display: block;
+  border: 2px solid #D4C9AE;
+  margin: ($global-baseline * 2) 0;
+  border-radius: $global-baseline / 2;
+  padding: $global-baseline;
+}

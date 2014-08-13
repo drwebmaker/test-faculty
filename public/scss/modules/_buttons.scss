@@ -1,0 +1,9 @@
+.button {
+  color: #FFFFFF;
+  font-size: $global-font-size;
+  background: #32ba9a;
+  border-radius: $global-baseline * 4;
+  width: $global-baseline * 27 + 1px;
+  height: $global-baseline * 5 - 4px;
+  text-align: center;
+}

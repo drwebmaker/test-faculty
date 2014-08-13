@@ -1,0 +1,31 @@
+.content-panel {
+
+
+  &__block {
+    padding:  $global-baseline * 3
+    $global-baseline * 3
+            ($global-baseline * 3 - 1px)
+    $global-baseline * 3;
+
+    &:first-of-type {
+      border-top-right-radius: $global-border-radius;
+      border-top-left-radius: $global-border-radius;
+    }
+
+    &:last-of-type {
+      padding-bottom: $global-baseline * 3;
+
+      border-bottom-right-radius: $global-border-radius;
+      border-bottom-left-radius: $global-border-radius;
+    }
+
+    &--small {
+      padding-top: $global-baseline * 2;
+      padding-bottom: $global-baseline * 2;
+    }
+    &--left-right-none {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.experts-list {
+  // empty for now
+  &__item {
+//    height: $global-baseline * 13;
+    border-radius: $global-baseline / 2;
+    margin-bottom: $global-baseline * 5 + 1px;
+  }
+  &__grid {
+    padding-left: $global-baseline * 2;
+  }
+}
+.expert-item {
+  height: $global-baseline * 9 - 2px;
+  margin-top: $global-baseline * 4 - 3px;
+  position: relative;
+  color: #FFFFFF;
+  &__avatar {
+    position: absolute;
+    top: -($global-baseline * 4 - 3px);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    &-img {
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    top: $global-baseline * 4;
+    font-size: $global-baseline * 2;
+  }
+  &__spec {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    top: $global-baseline * 6;
+    font-size: $global-baseline;
+  }
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    border-radius: $global-baseline / 2;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    &-inside {
+      background: url("/img/avatar.png") no-repeat 0 50%;
+      background-size: 100%;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -ms-filter: blur(5px);
+      -o-filter: blur(5px);
+      filter: blur(5px);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

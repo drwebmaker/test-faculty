@@ -1,0 +1,60 @@
+.input {
+  @include appearance(none);
+  padding: (($global-baseline/2) - 1px) $global-baseline;
+
+  border-radius: $global-border-radius;
+  border: 1px solid #BDBDBD;
+
+  &:focus {
+    border-color: darken($color-dc-primary, 10%);
+    box-shadow: 0 0 3px rgba($color-dc-primary, 0.8);
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background-color: lighten($color-bg, 2%);
+  }
+}
+.input--full {
+  width: 100%;
+}
+.input--error {
+  border-color: $color-dc-secondary;
+
+  &:focus {
+    border-color: $color-dc-secondary;
+    box-shadow: 0 0 3px rgba($color-dc-secondary, 0.8);
+  }
+}
+.input--grouped {
+  border-radius: 0;
+
+  &:not(.input--grouped-first){
+    border-left: none;
+  }
+}
+.input--grouped-first {
+  border-top-left-radius: $global-border-radius;
+  border-bottom-left-radius: $global-border-radius;
+}
+.input--grouped-last {
+  border-top-right-radius: $global-border-radius;
+  border-bottom-right-radius: $global-border-radius;
+}
+
+
+/**
+ *  SEARCHBOX INPUT
+ *
+ *  adds decoration for standard input[type="search"]
+ *
+ *  .input
+ *  <---  .input-search
+ *
+ */
+.input-search {
+  @extend .input;
+
+  padding-left: 3*$global-baseline;
+  border-radius: 100px;
+}

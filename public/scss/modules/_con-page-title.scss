@@ -1,0 +1,24 @@
+$con-page-title-height: $global-line-height * 10;
+$con-page-title-font-size: $global-font-size * 3;
+
+
+.con-page-title {
+  background-color: #000 ;
+  height: $con-page-title-height;
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $con-page-title-font-size;
+    color: white;
+  }
+}
+
+.cpt-conteiner {
+  background: url("/img/Experts.png") 50% 0;
+  background-size: 70%;
+  height: 100%;
+  text-align: center;
+
+  @extend %center;
+}
