@@ -3,6 +3,7 @@
   color: #FFFFFF;
   padding-top: 5%;
   font-weight: 700;
+  font-size: $global-font-size-small;
 }
 
 .pf-menu {
@@ -10,10 +11,53 @@
   margin: 0;
 
   &__item {
+    line-height: $global-baseline * 3;
+  }
 
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: $global-baseline * 2;
   }
 }
 
 .pf-header {
   color: #94948e;
+}
+
+.pf-top {
+  padding-bottom: $global-baseline * 7;
+  border-bottom: 1px solid #404040;
+}
+
+.pf-bottom {
+
+  &-name {
+    color: #94948e;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.pf-banner {
+  // someting
+
+  &__item {
+    border-radius: $global-baseline / 2;
+    border: 2px solid #94948e;
+    text-align: center;
+    text-transform: uppercase;
+    height: $global-baseline * 5 + 8px;
+    vertical-align: middle;
+    font-size: $global-font-size;
+
+    @extend %center;
+
+    &-wheel {
+      background: url("/img/wheel.jpg") ($global-baseline * 2) 50% no-repeat;
+    }
+
+    &-bag {
+      background: url("/img/bag.jpg") ($global-baseline * 2) 50% no-repeat;
+    }
+  }
 }

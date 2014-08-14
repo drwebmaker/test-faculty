@@ -1,0 +1,12 @@
+.idea
+bower_components/
+node_modules/
+build/coverage/
+build/target/
+public/javascript/libs/
+public/javascript/app/templates.js
+public/javascript/app/mocks.js
+public/scss/vendor/ng-wig/
+svg-icons-out/
+.sass-cache
+.rvmrc

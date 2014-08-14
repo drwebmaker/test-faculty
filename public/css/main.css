@@ -21,7 +21,7 @@
  *
  */
 /* line 11, ../scss/utilities/_center-p.scss */
-.cpt-conteiner:before, .adv-block__item:before {
+.cpt-conteiner:before, .adv-block__item:before, .pf-banner__item:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -1460,15 +1460,57 @@ img {
   color: #FFFFFF;
   padding-top: 5%;
   font-weight: 700;
+  font-size: 12px;
 }
 
-/* line 8, ../scss/modules/_page-footer.scss */
+/* line 9, ../scss/modules/_page-footer.scss */
 .pf-menu {
   list-style: none;
   margin: 0;
 }
-
+/* line 13, ../scss/modules/_page-footer.scss */
+.pf-menu__item {
+  line-height: 36px;
+}
 /* line 17, ../scss/modules/_page-footer.scss */
+.pf-menu__title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* line 23, ../scss/modules/_page-footer.scss */
 .pf-header {
   color: #94948e;
+}
+
+/* line 27, ../scss/modules/_page-footer.scss */
+.pf-top {
+  padding-bottom: 84px;
+  border-bottom: 1px solid #404040;
+}
+
+/* line 34, ../scss/modules/_page-footer.scss */
+.pf-bottom-name {
+  color: #94948e;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 44, ../scss/modules/_page-footer.scss */
+.pf-banner__item {
+  border-radius: 6px;
+  border: 2px solid #94948e;
+  text-align: center;
+  text-transform: uppercase;
+  height: 68px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 55, ../scss/modules/_page-footer.scss */
+.pf-banner__item-wheel {
+  background: url("/img/wheel.jpg") 24px 50% no-repeat;
+}
+/* line 59, ../scss/modules/_page-footer.scss */
+.pf-banner__item-bag {
+  background: url("/img/bag.jpg") 24px 50% no-repeat;
 }
